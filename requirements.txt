@@ -1,0 +1,36 @@
+# Core RAG
+langchain==0.1.9
+langchain-community==0.0.24
+langchain-core==0.1.27
+
+# Vector database
+chromadb==0.4.22
+
+# Embeddings (runs locally, no API needed)
+sentence-transformers==2.4.0
+
+# LLM - Groq (free tier, no credit card)
+groq==0.4.2
+
+# Document processing
+pypdf==4.0.2
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==5.1.0
+
+# Security
+python-dotenv==1.0.0
+validators==0.22.0
+
+# Demo
+gradio==5.0.0
+
+# Utilities
+pandas==2.1.4
+numpy==1.26.2
+tqdm==4.66.1
+loguru==0.7.2
+
+# Testing
+pytest==7.4.3
+httpx==0.26.0
