@@ -8,8 +8,6 @@
 
 > A production-style RAG system that ingests news articles, stores them in a vector database, and answers natural language questions with cited, faithful responses — with a full security layer.
 
-**[Live Demo →](https://huggingface.co/spaces/YOUR_USERNAME/rag-news-assistant)**
-
 ---
 
 ## Architecture
