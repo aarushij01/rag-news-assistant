@@ -23,7 +23,7 @@ python-dotenv==1.0.0
 validators==0.22.0
 
 # Demo
-gradio==5.0.0
+flask==3.0.2
 
 # Utilities
 pandas==2.1.4

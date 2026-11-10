@@ -36,12 +36,13 @@ ALLOWED_DOMAINS = set(
 
 # Prompt injection patterns — phrases that try to override system instructions
 INJECTION_PATTERNS = [
-    r"ignore (previous|all|above|prior) instructions?",
+    # allow up to 3 filler words: "ignore all previous instructions", "ignore the above instructions"
+    r"ignore\s+(?:\w+\s+){0,3}instructions?",
     r"forget (everything|all|your instructions?)",
     r"you are now",
     r"act as (a|an|if)",
     r"pretend (you are|to be|that)",
-    r"disregard (your|all|previous)",
+    r"disregard\s+(?:\w+\s+){0,2}(your|all|previous|above|prior)",
     r"new (system|persona|role|instructions?)",
     r"override (your|the|all)",
     r"jailbreak",

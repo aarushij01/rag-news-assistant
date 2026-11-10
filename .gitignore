@@ -1,4 +1,28 @@
-venv/
-.env
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+.venv
+venv/
+*.egg-info/
+
+# SECURITY — never commit these
+.env
+*.key
+*.pem
+secrets/
+
+# Vector DB (large, regenerate with ingest.py)
+data/chroma_db/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Windows
+desktop.ini
+.pytest_cache/
